@@ -1,0 +1,49 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# TensorFlow source repository and downloaded dependencies
+Tensorflow/models/
+
+# Training checkpoints
+Tensorflow/workspace/models/**/checkpoint
+Tensorflow/workspace/models/**/*.index
+Tensorflow/workspace/models/**/*.data-*
+Tensorflow/workspace/models/**/*.meta
+Tensorflow/workspace/models/**/*.ckpt*
+Tensorflow/workspace/models/**/events.out.tfevents.*
+
+# Exported trained models
+Tensorflow/workspace/exported-models/
+Tensorflow/workspace/exported_model/
+
+# Pretrained models
+Tensorflow/workspace/pre-trained-models/
+
+# Dataset and generated annotation data
+Tensorflow/workspace/images/collectedimages/
+Tensorflow/workspace/images/train/
+Tensorflow/workspace/images/test/
+Tensorflow/workspace/images/annotation_check/
+Tensorflow/workspace/annotations/*.record
+
+# Backups
+backups/
+
+# Temporary outputs
+annotation_check/
+evaluation_images/
+*.log
+
+# TensorBoard logs
+events.out.tfevents.*
+
+# Backup configuration files
+*.backup
